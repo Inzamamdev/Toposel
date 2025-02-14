@@ -13,3 +13,8 @@ export const signupSchema = z.object({
     .regex(/^\d{4}-\d{2}-\d{2}$/, "Date of birth must be in YYYY-MM-DD format"),
   country: z.string().min(2, "Country name is required"),
 });
+
+export const loginSchema = z.object({
+  email: z.string().email("Invalid email format"),
+  password: z.string().min(1, "Password is required"),
+});
