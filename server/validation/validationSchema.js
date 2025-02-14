@@ -1,7 +1,10 @@
 import { z } from "zod";
 
 export const signupSchema = z.object({
-  username: z.string().min(1, { message: "Name is required" }).max(20),
+  username: z
+    .string()
+    .min(1, { message: "Name is required" })
+    .max(20, { message: "Username must be within 20 characters" }),
   email: z.string().email({ message: "Invalid email format" }),
   password: z
     .string()
