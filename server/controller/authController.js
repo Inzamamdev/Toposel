@@ -20,7 +20,7 @@ export const signupController = async (req, res) => {
       password: hashedPassword,
       fullName,
       gender,
-      dob,
+      dateOfBirth,
       country,
     });
     await newUser.save();

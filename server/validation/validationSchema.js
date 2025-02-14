@@ -8,7 +8,7 @@ export const signupSchema = z.object({
     .min(6, { message: "Password must be at least 6 characters long" }),
   fullName: z.string().min(3, "Full name must be at least 3 characters"),
   gender: z.enum(["Male", "Female", "Other"]),
-  dob: z
+  dateOfBirth: z
     .string()
     .regex(/^\d{4}-\d{2}-\d{2}$/, "Date of birth must be in YYYY-MM-DD format"),
   country: z.string().min(2, "Country name is required"),
