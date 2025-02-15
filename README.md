@@ -41,7 +41,7 @@ The server will run on `http://localhost:5000` (or the port specified in `.env`)
 
 ### 1. Register a User
 
-**POST** `/api/auth/user-registeration`
+**POST** `/api/auth/user-registration`
 
 ### 2. Login User
 
